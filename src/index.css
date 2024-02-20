@@ -1,3 +1,11 @@
 .formContainer {
   background-color: aquamarine;
+  margin: auto;
+  width: 400px;
+  height: 700px;
+  border: 5px solid;
+}
+.header {
+  margin: auto;
+  text-align: center;
 }
