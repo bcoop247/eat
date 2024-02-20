@@ -29,10 +29,13 @@ const RegistrationForm = () =>{
 
   return(
     <>
-    <div className="formContainer">
+    <div className="formContainer border text-center mt-3 mb-3">
+      
       <h1 className="header">EAT</h1>
+      
       <h1 className="header">REGISTRATION FORM</h1>
       <form onSubmit={handleSubmit}>
+          
         <label htmlFor="firstName"></label>
         <input id="firstName" type="text" onChange={handleFirstName} value={firstName} placeholder="First Name"/><br />
 
@@ -46,14 +49,16 @@ const RegistrationForm = () =>{
         <input id="password" type="text" onChange={handlePassword} value={password} placeholder="Password"/><br />
         
         <button type="submit" className="btn btn-primary">Submit</button><br />
+        
       </form>
+      </div>
       
 
 
 {/* <h2>TESTING FIRST NAME = {firstName}</h2>
 <h2>TESTING LAST NAME = {lastName}</h2>
 <h2>TESTING F NAME SUBMITTED: </h2> */}
-    </div>
+  
     
     </>
   )
