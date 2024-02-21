@@ -1,6 +1,7 @@
 // import "./index.css";
 import {useState} from 'react'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import React from "react";
 
 
@@ -29,28 +30,43 @@ const RegistrationForm = () =>{
 
   return(
     <>
-    <div className="formContainer border text-center mt-3 mb-3">
+    <div className="border border-primary rounded text-center mt-3 mb-3 formContainer">
       
       <h1 className="header">EAT</h1>
       
-      <h1 className="header">REGISTRATION FORM</h1>
+      <h2 className="header">Registration Form</h2>
+      
       <form onSubmit={handleSubmit}>
+        <div className='form-group mt-3'>
           
-        <label htmlFor="firstName"></label>
-        <input id="firstName" type="text" onChange={handleFirstName} value={firstName} placeholder="First Name"/><br />
+          <label htmlFor="firstName"></label>
+          <input  className='w-75 rounded text-center inputField' id="firstName" type="text" onChange={handleFirstName} value={firstName} placeholder="First Name"/><br />
+          
+        </div>
 
+        <div className='form-group mt-3'>
         <label htmlFor="lastName"></label>
-        <input id="lastName" type="text" onChange={handleLastName} value={lastName} placeholder="Last Name"/><br />
+        <input className='w-75 rounded text-center inputField' id="lastName" type="text" onChange={handleLastName} value={lastName} placeholder="Last Name"/><br />
+        </div>
 
-        <label htmlFor="firstName"></label>
-        <input id="password" type="text" onChange={handleEmail} value={email} placeholder="Email"/><br />
+        <div className='form-group mt-3'>
+        <label htmlFor="email"></label>
+        <input className='w-75 rounded text-center inputField' id="email" type="text" onChange={handleEmail} value={email} placeholder="Email"/><br />
+        </div>
 
-        <label htmlFor="firstName"></label>
-        <input id="password" type="text" onChange={handlePassword} value={password} placeholder="Password"/><br />
+        <div className='form-group form-group-lg mt-3'>
+        <label htmlFor="password"></label>
+        <input className='w-75 rounded text-center inputField' id="password" type="password" onChange={handlePassword} value={password} placeholder="Password"/><br />
+        </div>
         
-        <button type="submit" className="btn btn-primary">Submit</button><br />
+        <div className='form-group mt-3'>
+        <button id="button" type="submit" className="btn btn-primary">Submit <FontAwesomeIcon icon={faPaperPlane} /></button><br />
+        </div>
         
       </form>
+
+
+      <p className='mt-3'>Already a member? - <span className='span'>Login</span></p>
       </div>
       
 
