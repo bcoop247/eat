@@ -1,34 +1,37 @@
 body{
-  background-color: #2f404d;
+  background-color: white;
 }
+/* Registration Form */
 .header {
   margin: auto;
   text-align: center;
-  font-family: 'Anta';
+  font-family: "Pacifico", cursive;
+  color: #17769d;
 }
 .formContainer {
   margin: auto;
   width: 400px;
   height: 700px;
   border-color: #17769d !important;
-  /* box-shadow: 10px 10px 5px #17769d !important; */
-  background-color: #17769d ;
-  color: #ab1725;
+  background-color: #E7E7E7 ;
+  color: #17769d;
 }
 .inputField{
   font-family: 'Anta';
   height: 50px;
-  border-color: #ab1725;
   color: #ab1725;
+  border-color: #17769d;
   
 }
 #button{
-  background-color: #f43d9b;
-  border-color: #f43d9b;
+  background-color: #ab1725;
+  border-color: #ab1725;;
 }
-.span{
-  color: #f43d9b;
+.link{
+  color: #ab1725;
   font-weight: bold;
+  text-decoration: none;
 }
+/* Home */
 
 

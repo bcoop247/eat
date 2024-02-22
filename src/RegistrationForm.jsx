@@ -3,6 +3,7 @@ import {useState} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import React from "react";
+import { Link } from 'react-router-dom';
 
 
 const RegistrationForm = () =>{
@@ -66,7 +67,8 @@ const RegistrationForm = () =>{
       </form>
 
 
-      <p className='mt-3'>Already a member? - <span className='span'>Login</span></p>
+      <p className='mt-3'>Already a member? - <span className='link'>Login</span></p>
+      <Link to='/eat/home' className='link'><p>Continue as Guest</p></Link>
       </div>
       
 
