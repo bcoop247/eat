@@ -10,10 +10,10 @@ function App() {
 
   return (
     <>
-    <Router>
+    <Router basename='/eat'>
     <Routes>
-      <Route exact path="/" element={<Home/>} />
-      <Route path='/eat/register' element={<RegistrationForm />} />
+      <Route index element={<Home />} />
+      <Route path='/register' element={<RegistrationForm />} />
     </Routes>
     </Router>
 
