@@ -14,7 +14,7 @@ function App() {
     <Routes>
       
       <Route path='/eat/register' element={<RegistrationForm />} />
-      <Route path='/eat/home' element={<Home />} />
+      <Route path='/eat' element={<Home />} />
     </Routes>
     </Router>
 
