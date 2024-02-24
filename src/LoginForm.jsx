@@ -6,18 +6,10 @@ import React from "react";
 import { Link } from 'react-router-dom';
 
 
-const RegistrationForm = () =>{
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
+const LoginForm = () =>{
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleFirstName = (e) => {
-    setFirstName(e.target.value);
-  }
-  const handleLastName = (e) => {
-    setLastName(e.target.value);
-  }
   const handleEmail = (e) => {
     setEmail(e.target.value);
   }
@@ -27,28 +19,16 @@ const RegistrationForm = () =>{
   const handleSubmit = (e) => {
     e.preventDefault();
   }
-  console.log(firstName);
 
   return(
     <>
     <div className="border border-primary rounded text-center mt-3 mb-3 formContainer">
       
-      <h1 className="header">EAT</h1>
+      <h1 className="header">Eat</h1>
       
-      <h2 className="header">Registration Form</h2>
+      <h2 className="header">Login Form</h2>
       
       <form onSubmit={handleSubmit}>
-        <div className='form-group mt-3'>
-          
-          <label htmlFor="firstName"></label>
-          <input  className='w-75 rounded text-center inputField' id="firstName" type="text" onChange={handleFirstName} value={firstName} placeholder="First Name"/><br />
-          
-        </div>
-
-        <div className='form-group mt-3'>
-        <label htmlFor="lastName"></label>
-        <input className='w-75 rounded text-center inputField' id="lastName" type="text" onChange={handleLastName} value={lastName} placeholder="Last Name"/><br />
-        </div>
 
         <div className='form-group mt-3'>
         <label htmlFor="email"></label>
@@ -68,18 +48,11 @@ const RegistrationForm = () =>{
 
 
       <p className='mt-3'>Already a member? - <span className='link'>Login</span></p>
-      <Link to='/' className='link'><p>Link Continue as Guest for Testing</p></Link>
+      <Link to='/' className='link'><p>Link Continue to successfuly home login page for Testing</p></Link>
       </div>
-      
-
-
-{/* <h2>TESTING FIRST NAME = {firstName}</h2>
-<h2>TESTING LAST NAME = {lastName}</h2>
-<h2>TESTING F NAME SUBMITTED: </h2> */}
-  
-    
+          
     </>
   )
 }
 
-export default RegistrationForm;
+export default LoginForm;

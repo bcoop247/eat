@@ -1,5 +1,9 @@
 body{
-  background-color: white;
+  background-color: #17769d;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100vh; /* Set height to cover the entire viewport height */
+  overflow: hidden;
 }
 /* Registration Form */
 .header {
@@ -11,7 +15,7 @@ body{
 .formContainer {
   margin: auto;
   width: 400px;
-  height: 700px;
+  /* height: 700px; */
   border-color: #17769d !important;
   background-color: #E7E7E7 ;
   color: #17769d;
@@ -34,11 +38,8 @@ body{
 }
 /* Navigation Bar */
 .navigationBar{
-  position: fixed;
-  left: 0;
-  width: 200px;
-  height: 100%;
   background-color: #E7E7E7;
+  height: 100%;
 }
 .navigationBar ul{
   list-style-type: none;
@@ -49,7 +50,26 @@ body{
   color: #ab1725;
   font-family: 'Anta';
   font-size: medium;
+}
+/* SearchBar */
+.searchBarDiv{
+  text-align: center;
   
 }
+.searchBar{
+border-color: #E7E7E7;
+font-family: 'Anta';
+}
+.row.content {
+  height: 1500px;
+}
+@media screen and (max-width: 767px) {
+  .navigationBar {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height: auto;} 
+}
+
 
 
