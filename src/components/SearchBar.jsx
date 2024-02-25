@@ -18,7 +18,7 @@ const SearchBar = () => {
       <div className="container-fluid col-sm-10 mt-2 searchBarDiv">
         <form name="search" onSubmit={handleSubmit}>
         <label htmlFor="searchBar" />
-        <input id="searchBar" className="w-25 rounded text-center searchBar" type="text" placeholder="Search" onChange={userInput} />
+        <input id="searchBar" className="rounded text-center searchBar" type="text" placeholder="Search" onChange={userInput} />
       </form>
       
       </div>

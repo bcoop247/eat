@@ -59,6 +59,8 @@ body{
 .searchBar{
 border-color: #E7E7E7;
 font-family: 'Anta';
+width: 300px;
+
 }
 .row.content {
   height: 1500px;
@@ -70,6 +72,30 @@ font-family: 'Anta';
   }
   .row.content {height: auto;} 
 }
+.card{
+  width: 18rem;
+}
+.newFood{
+  color:#E7E7E7;
+  font-family: 'Pacifico', cursive;
+  cursor: pointer;
+  
+}
+.ingredients{
+  background-color: #E7E7E7;
+  padding: 5px;
+  margin: 5px;;
+}
+.directions{
+  background-color: #E7E7E7;
+}
+.uploadVideo{
+  background-color: #E7E7E7;
+}
+.textArea{
+width: 33%;
+}
+
 
 
 
