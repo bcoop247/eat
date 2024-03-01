@@ -32,23 +32,18 @@ const MyFood = () => {
          <NavigationBar />
         
         </div>
-        <div className="col-sm-9">
+        <div className="col-sm-10">
           <SearchBar />
         
+        {newFoodForm === false &&
           <div className="container-fluid text-center col-sm-2" >
-            <FontAwesomeIcon icon={faPlus} className="fa-2xl mt-5 newFood border-rounded" onClick={handleClick}/>
-            
+            <FontAwesomeIcon icon={faPlus} className="fa-xl border rounded mt-2 newFood border-rounded" onClick={handleClick} />
           </div>
-
+        }     
           {newFoodForm && <div><NewFoodForm /></div>}
           
     
         </div>
-        <div className="col-sm-1">
-          <SettingsTab />
-        </div>
-
-
   </div>
 </div>
     

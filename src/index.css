@@ -44,23 +44,35 @@ body{
 .navigationBar ul{
   list-style-type: none;
 }
-.navigationBarLink{
+/* .navigationBarLink:focus{
+  color: #ab1725;
+  font-weight: bold;
+  font-size: medium;
+  font-family: 'Anta';
+} */
+.navigationBarClicked .navigationBarLink {
+  color: red; /* Change this to whatever color you want */
+}
+
+.navigationBarLink:hover{
   font-weight: bold;
   text-decoration: none;
   color: #ab1725;
   font-family: 'Anta';
   font-size: medium;
 }
-/* SearchBar */
-.searchBarDiv{
-  text-align: center;
-  
-}
-.searchBar{
-border-color: #E7E7E7;
-font-family: 'Anta';
-width: 300px;
 
+/* SearchBar */
+.searchBar{
+font-family: 'Anta';
+border-radius: 20px;
+}
+.submitBtn{
+  background-color: #E7E7E7;
+  font-family: 'Anta';
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+ 
 }
 .row.content {
   height: 1500px;
@@ -81,21 +93,5 @@ width: 300px;
   cursor: pointer;
   
 }
-.ingredients{
-  background-color: #E7E7E7;
-  padding: 5px;
-  margin: 5px;;
-}
-.directions{
-  background-color: #E7E7E7;
-}
-.uploadVideo{
-  background-color: #E7E7E7;
-}
-.textArea{
-width: 33%;
-}
-
-
 
 
