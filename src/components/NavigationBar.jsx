@@ -3,22 +3,20 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
 const NavigationBar = () => {
-  const [clickedNav, setClickedNav] = useState(false);
+  const [clicked, setClicked] = useState(false);
+  
   const handleNavClick = () => {
-    setClickedNav(!clickedNav)
+    setClicked(!clicked);
   }
   
-
-
-
 return(
   <>
   <div className='container-fluid navigationBar text-center'>
   <h1 className='header'>Eat</h1>
     <ul className='list-group'>
-    <li className={clickedNav ? 'navigationBarClicked' : ''} onClick={handleNavClick}>
-      hello
-        <Link to='/' className='navigationBarLink list-group-item'>Home</Link>
+    <li  >
+      
+        <Link to='/' onClick={handleNavClick} className={`navigationBarLink list-group-item ${clicked ? 'clicked' : ''}`}>Home</Link>
       </li>
       <li>
         

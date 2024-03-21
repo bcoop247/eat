@@ -4,9 +4,10 @@ import SettingsTab from "./components/SettingsTab"
 import Card from "./components/Card"
 import NewFoodForm from './components/NewFoodForm'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faSquarePlus } from '@fortawesome/free-solid-svg-icons';
 import './index.css'
 import { useState } from "react";
+import DirectionsCard from "./components/DirectionsCard"
 
 
 const MyFood = () => {
@@ -37,10 +38,11 @@ const MyFood = () => {
         
         {newFoodForm === false &&
           <div className="container-fluid text-center col-sm-2" >
-            <FontAwesomeIcon icon={faPlus} className="fa-xl border rounded mt-2 newFood border-rounded" onClick={handleClick} />
+            <FontAwesomeIcon icon={faSquarePlus} className="fa-2xl rounded mt-2 newFood" onClick={handleClick} /> <span>New recipe</span>
           </div>
         }     
-          {newFoodForm && <div><NewFoodForm /></div>}
+          {/* {newFoodForm && <div><NewFoodForm /></div>} */}
+          {newFoodForm && <div><DirectionsCard /></div>}
           
     
         </div>

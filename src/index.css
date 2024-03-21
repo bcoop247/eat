@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 body{
   background-color: #17769d;
   margin: 0; /* Remove default margin */
@@ -13,8 +17,9 @@ body{
   color: #17769d;
 }
 .formContainer {
-  margin: auto;
+  margin: 0;
   width: 400px;
+  
   /* height: 700px; */
   border-color: #17769d !important;
   background-color: #E7E7E7 ;
@@ -44,23 +49,15 @@ body{
 .navigationBar ul{
   list-style-type: none;
 }
-/* .navigationBarLink:focus{
-  color: #ab1725;
-  font-weight: bold;
-  font-size: medium;
-  font-family: 'Anta';
-} */
-.navigationBarClicked .navigationBarLink {
-  color: red; /* Change this to whatever color you want */
-}
-
 .navigationBarLink:hover{
+  color:#ab1725;
+}
+.clicked{
+  color: #ab1725;
   font-weight: bold;
   text-decoration: none;
-  color: #ab1725;
-  font-family: 'Anta';
-  font-size: medium;
 }
+
 
 /* SearchBar */
 .searchBar{
