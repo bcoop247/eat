@@ -3,11 +3,12 @@
 }
 
 body{
+  overflow-y: auto;
   background-color: #17769d;
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
-  height: 100vh; /* Set height to cover the entire viewport height */
-  overflow: hidden;
+  /* Set height to cover the entire viewport height */
+  /* height: 100vh;  */
 }
 /* Registration Form */
 .header {
@@ -19,12 +20,11 @@ body{
 .formContainer {
   margin: 0;
   width: 400px;
-  
-  /* height: 700px; */
   border-color: #17769d !important;
   background-color: #E7E7E7 ;
   color: #17769d;
 }
+
 .inputField{
   font-family: 'Anta';
   height: 50px;
@@ -44,7 +44,7 @@ body{
 /* Navigation Bar */
 .navigationBar{
   background-color: #E7E7E7;
-  height: 100%;
+  height: 100vh;
 }
 .navigationBar ul{
   list-style-type: none;

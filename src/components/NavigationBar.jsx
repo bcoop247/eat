@@ -11,7 +11,7 @@ const NavigationBar = () => {
   
 return(
   <>
-  <div className='container-fluid navigationBar text-center'>
+  <div className='navigationBar text-center'>
   <h1 className='header'>Eat</h1>
     <ul className='list-group'>
     <li  >

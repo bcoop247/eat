@@ -2,7 +2,7 @@ import NavigationBar from "./components/NavigationBar"
 import SearchBar from "./components/SearchBar"
 import SettingsTab from "./components/SettingsTab"
 import Card from "./components/Card"
-import NewFoodForm from './components/NewFoodForm'
+import IngredientsCard from './components/IngredientsCard'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquarePlus } from '@fortawesome/free-solid-svg-icons';
 import './index.css'
@@ -28,7 +28,7 @@ const MyFood = () => {
   return(
     <>
     <div className="container-fluid">
-      <div className="row content">
+      <div className="row">
         <div className="col-sm-2 navigationBar">
          <NavigationBar />
         
@@ -41,10 +41,11 @@ const MyFood = () => {
             <FontAwesomeIcon icon={faSquarePlus} className="fa-2xl rounded mt-2 newFood" onClick={handleClick} /> <span>New recipe</span>
           </div>
         }     
-          {/* {newFoodForm && <div><NewFoodForm /></div>} */}
-          {newFoodForm && <div><DirectionsCard /></div>}
+          {newFoodForm && <div>
+            <IngredientsCard />
+            
+            </div>}
           
-    
         </div>
   </div>
 </div>

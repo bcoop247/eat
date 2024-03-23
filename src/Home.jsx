@@ -9,7 +9,7 @@ const Home = () => {
 return(
   <>
       <div className="container-fluid">
-      <div className="row content">
+      <div className="row">
         <div className="col-sm-2 navigationBar">
          <NavigationBar />
         
