@@ -2,12 +2,11 @@ import NavigationBar from "./components/NavigationBar"
 import SearchBar from "./components/SearchBar"
 import SettingsTab from "./components/SettingsTab"
 import Card from "./components/Card"
-import IngredientsCard from './components/IngredientsCard'
+import NewRecipeForm from './components/NewRecipeForm'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquarePlus } from '@fortawesome/free-solid-svg-icons';
 import './index.css'
 import { useState } from "react";
-import DirectionsCard from "./components/DirectionsCard"
 
 
 const MyFood = () => {
@@ -42,7 +41,7 @@ const MyFood = () => {
           </div>
         }     
           {newFoodForm && <div>
-            <IngredientsCard />
+            <NewRecipeForm />
             
             </div>}
           
