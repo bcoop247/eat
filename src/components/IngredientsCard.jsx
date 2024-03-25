@@ -3,49 +3,47 @@ import { useState } from 'react'
 import DirectionsCard from './DirectionsCard'
 
 const IngredientsCard = () => {
-  // const [ingredientsSubmitted, setIngredientsSubmitted] = useState(false);
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   setIngredientsSubmitted(true);
-  //   console.log(ingredientsSubmitted)
-  //   console.log('testing')
+const [text, setText] = useState('');
 
-  // }
 
   return(
     <>
-<div className="d-flex p-2 justify-content-center">
-      <div className="border-primary text-center formContainer">
-        <h1 className="header">
-          Ingredients
-        </h1>
-        <form>
-          <div className="form-group">
-          <label htmlFor='ingredients'></label>
-          <textarea id="ingredients" className='form-control' rows="15" placeholder='What you gonna use to make this dish! List all ingredients.'></textarea>
-
+    <div>
+    <form className='d-flex text-center justify-content-around'>
+      <div className="form-group custom-form">
+        <label htmlFor='ingredients'></label>
+          <div className='textarea-container'>
+            <h1 className='header'>Ingredients</h1>
+            <textarea
+            id="ingredients" 
+            className='form-control custom-textarea' rows="15" 
+            placeholder='What you gonna use to make this dish! List all ingredients.'>
+            </textarea>
           </div>
-          <div className="border-primary text-center formContainer">
-        <h1 className="header">
-          Directions
-        </h1>
-        
-          <div className="form-group">
-          <label htmlFor='directions'></label>
-          <textarea id="directions" className='form-control' rows="15" placeholder='Give your directions here!'></textarea>
-
+      </div>
+      <div className="form-group custom-form">
+        <label htmlFor='ingredients'></label>
+          <div className='textarea-container'>
+            <h1 className='header'>Directions</h1>
+            <textarea id="ingredients" className='form-control custom-textarea' rows="15" placeholder='Enter the directions for recipe'>
+            </textarea>
           </div>
-          </div>
-
-
-
-
-          {/* <button type="submit" className="m-auto btn btn-primary">Submit</button> */}
-
-        </form>
-
       </div>
 
+      <div className="form-group custom-form">
+            <label htmlFor='recipeName'></label>
+            <h1 className='header'>Name</h1>
+            <input type='text' id='recipeName'></input>
+      </div>
+
+      <div className="form-group custom-form">
+        <label htmlFor='photo'></label>
+            <h1 className='header'>Media</h1>
+              <input type='file' id="photo"></input>
+
+          
+      </div>
+    </form>
     </div>
         
 

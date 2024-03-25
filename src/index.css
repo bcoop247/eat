@@ -16,13 +16,26 @@ body{
   text-align: center;
   font-family: "Pacifico", cursive;
   color: #17769d;
+  background-color: #E7E7E7;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
+/* LOGIN FORMS */
 .formContainer {
   margin: 0;
   width: 400px;
   border-color: #17769d !important;
   background-color: #E7E7E7 ;
   color: #17769d;
+}
+.custom-textarea{
+  background-color: #E7E7E7;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.custom-form{
+  width: 250px;
+  background-color: #E7E7E7;
 }
 
 .inputField{
