@@ -18,9 +18,6 @@ const SearchBar = () => {
   }
 
 
- 
-
-
   return(
     <>
     <form name='search' onSubmit={handleSubmit}>

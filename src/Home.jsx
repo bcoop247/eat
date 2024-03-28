@@ -14,11 +14,7 @@ return(
          <NavigationBar />
         
         </div>
-        <div className="col-sm-10">
-          <SearchBar />
-        
-    
-        </div>
+
   </div>
 </div>
 

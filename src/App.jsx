@@ -5,7 +5,7 @@ import Home from './Home';
 import React from "react";
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LoginForm from './LoginForm';
-import MyFood from './MyFood';
+import AddNewRecipe from './AddNewRecipe';
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
       <Route index element={<Home />} />
       <Route path='/login' element={<LoginForm />} />
       <Route path='/register' element={<RegistrationForm />} />
-      <Route path='/myfood' element={<MyFood />} />
+      <Route path='/addnewrecipe' element={<AddNewRecipe />} />
 
       
 

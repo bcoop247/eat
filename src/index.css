@@ -104,4 +104,8 @@ border-radius: 20px;
   
 }
 
-
+#testingDiv{
+  border: 3px black solid;
+  width: 20%;
+  height: 100%;
+}
