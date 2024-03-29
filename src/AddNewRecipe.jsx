@@ -62,12 +62,14 @@ const AddNewRecipe = () => {
           <NavigationBar />
         </div>
         <div className="col-sm-10">
+          <form>
           <div className="row">
             {/* Your grid content here */}
-            <div className="col">Column 1</div>
+            <div className="col"><NewRecipeForm /></div>
             <div className="col">Column 2</div>
             <div className="col">Column 3</div>
           </div>
+          </form>
           <div className="row">
             {/* Your grid content here */}
             <div className="col">Column 1</div>

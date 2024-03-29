@@ -5,8 +5,8 @@ const NewRecipeForm = () => {
 
   return(
     <>
-    <div>
-    <form className='d-flex text-center justify-content-around'>
+    
+    {/* <form className='d-flex text-center justify-content-around'>
       <div className="form-group custom-form">
         <label htmlFor='recipeName'></label>
           <h1 className='header'>Name</h1>
@@ -31,16 +31,14 @@ const NewRecipeForm = () => {
             </textarea>
           </div>
       </div>
-      {/* <div className="form-group custom-form">
-        <label htmlFor='photo'></label>
-            <h1 className='header'>Media</h1>
-              <input type='file' id="photo"></input>
+    </form> */}
 
-          
-      </div> */}
-    </form>
-    </div>
-        
+<div className="form-group custom-form">
+  <label htmlFor='recipeName'></label>
+    <h1 className='header'>Name</h1>
+      <input type='text' id='recipeName'></input>
+</div>
+
 
 
     </>
