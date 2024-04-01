@@ -33,9 +33,12 @@ body{
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
-.custom-form{
-  width: 250px;
+.customRecipeName{
   background-color: #E7E7E7;
+  margin-left: 20px;
+}
+.customDirections{
+  margin-right: 20px;
 }
 
 .inputField{

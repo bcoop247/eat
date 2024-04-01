@@ -2,7 +2,9 @@ import NavigationBar from "./components/NavigationBar"
 import SearchBar from "./components/SearchBar"
 import SettingsTab from "./components/SettingsTab"
 import Card from "./components/Card"
-import NewRecipeForm from './components/NewRecipeForm'
+import RecipeName from "./components/RecipeName"
+import Ingredients from "./components/Ingredients"
+import Directions from "./components/Directions"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquarePlus } from '@fortawesome/free-solid-svg-icons';
 import './index.css'
@@ -19,63 +21,33 @@ const AddNewRecipe = () => {
 
     return(
       <>
-      <h1>TEST</h1>
+      
       </>
     )
   }
 
   return(
     <>
-    {/* <div className="container-fluid">
-      <div className="row">
-        <div className="col-sm-2 navigationBar">
-         <NavigationBar />
-        
-        </div>
-        <div className="col-sm-10">
-          <SearchBar />
-        
-        {newFoodForm === false &&
-          <div className="container-fluid text-center col-sm-2" >
-            <FontAwesomeIcon icon={faSquarePlus} className="fa-2xl rounded mt-2 newFood" onClick={handleClick} /> <span>New recipe</span>
-          </div>
-        }     
-          {newFoodForm && <div>
-            <NewRecipeForm />
-            
-            </div>}
-          
-        </div>
-  </div>
-</div> */}
-
-
-
-
-{/* <div className="container-fluid p-0 d-flex">
-  <div className="col-sm-2 navigationBar"><NavigationBar /></div>
-  <div className=" row col-sm-10">Yo</div>
-</div> */}
    <div className="container-fluid p-0">
       <div className="row">
         <div className="col-sm-2 navigationBar">
           <NavigationBar />
         </div>
+        
         <div className="col-sm-10">
           <form>
           <div className="row">
             {/* Your grid content here */}
-            <div className="col"><NewRecipeForm /></div>
-            <div className="col">Column 2</div>
-            <div className="col">Column 3</div>
+            <div className="col mt-4 "><RecipeName /></div>
+            <div className="col mt-4"><Ingredients /></div>
+            <div className="col mt-4 customDirections"><Directions /></div>
           </div>
-          </form>
           <div className="row">
             {/* Your grid content here */}
-            <div className="col">Column 1</div>
-            <div className="col">Column 2</div>
-            <div className="col">Column 3</div>
+            <div className="col text-center">Column 1</div>
           </div>
+          </form>
+
         </div>
       </div>
     </div>
