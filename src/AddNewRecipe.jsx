@@ -12,18 +12,16 @@ import { useState } from "react";
 
 
 const AddNewRecipe = () => {
-  const [newFoodForm, setNewFoodForm] = useState(false)
+  const [recipeName, setRecipeName] = useState(false)
 
-  const handleClick = () => {
-    console.log('button clicked');
-    setNewFoodForm(true);
-    
+  const handleNameChange = (event) => {
+    setRecipeName(event.target.value);
+  }
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setRecipeName(recipeName);
+    console.log(recipeName);
 
-    return(
-      <>
-      
-      </>
-    )
   }
 
   return(
@@ -35,16 +33,18 @@ const AddNewRecipe = () => {
         </div>
         
         <div className="col-sm-10">
-          <form>
+          <form onSubmit={handleSubmit}>
           <div className="row">
             {/* Your grid content here */}
-            <div className="col mt-4 "><RecipeName /></div>
+            <div className="col mt-4 "><RecipeName props={recipeName} onChange={handleNameChange} /></div>
             <div className="col mt-4"><Ingredients /></div>
-            <div className="col mt-4 customDirections"><Directions /></div>
+            <div className="col mt-4"><Directions /></div>
           </div>
           <div className="row">
             {/* Your grid content here */}
-            <div className="col text-center">Column 1</div>
+            <div className="col text-center">
+              <input type="submit"></input>
+            </div>
           </div>
           </form>
 

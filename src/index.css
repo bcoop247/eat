@@ -33,14 +33,6 @@ body{
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
-.customRecipeName{
-  background-color: #E7E7E7;
-  margin-left: 20px;
-}
-.customDirections{
-  margin-right: 20px;
-}
-
 .inputField{
   font-family: 'Anta';
   height: 50px;
