@@ -1,4 +1,4 @@
-const Ingredients = () => {
+const Ingredients = ({ ingredients, onChange }) => {
 
   return(
     <div className="form-group">
@@ -8,7 +8,10 @@ const Ingredients = () => {
         <textarea
         id="ingredients" 
         className='form-control custom-textarea' rows="15" 
-        placeholder='What you gonna use to make this dish! List all ingredients.'>
+        placeholder='What you gonna use to make this dish! List all ingredients.'
+        value={ingredients} 
+        onChange = {onChange}
+        >
         </textarea>
       </div>
   </div>

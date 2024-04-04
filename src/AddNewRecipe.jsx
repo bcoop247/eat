@@ -5,25 +5,37 @@ import Card from "./components/Card"
 import RecipeName from "./components/RecipeName"
 import Ingredients from "./components/Ingredients"
 import Directions from "./components/Directions"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSquarePlus } from '@fortawesome/free-solid-svg-icons';
 import './index.css'
 import { useState } from "react";
 
 
 const AddNewRecipe = () => {
   const [recipeName, setRecipeName] = useState(false)
+  const [ingredients, setIngredients] = useState('')
+  const [directions, setDirections] = useState('')
+  const [recipeData, setRecipeData] = useState('')
 
   const handleNameChange = (event) => {
     setRecipeName(event.target.value);
   }
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    setRecipeName(recipeName);
-    console.log(recipeName);
-
+  const handleIngredientsChange = (e) => {
+    setIngredients(e.target.value)
   }
+  const handleDirectionsChange = (e) => {
+    setDirections(e.target.value)
+  }
+  const handleSubmit = async (event) => {
+   event.preventDefault();
 
+   try{
+    const response = await fetch('http://localhost:3000/new');
+    console.log(response);
+   }
+   catch(error){
+    console.log(error);
+   }
+    
+  };
   return(
     <>
    <div className="container-fluid p-0">
@@ -37,8 +49,8 @@ const AddNewRecipe = () => {
           <div className="row">
             {/* Your grid content here */}
             <div className="col mt-4 "><RecipeName props={recipeName} onChange={handleNameChange} /></div>
-            <div className="col mt-4"><Ingredients /></div>
-            <div className="col mt-4"><Directions /></div>
+            <div className="col mt-4"><Ingredients props={ingredients} onChange={handleIngredientsChange} /></div>
+            <div className="col mt-4"><Directions props={directions} onChange={handleDirectionsChange} /></div>
           </div>
           <div className="row">
             {/* Your grid content here */}
