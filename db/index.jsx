@@ -8,6 +8,7 @@ const dbConfig = {
   password: 'pass'
 };
 
+
 const db = pgp(dbConfig);
 
 module.exports = db;

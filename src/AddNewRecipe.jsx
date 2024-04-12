@@ -6,36 +6,32 @@ import RecipeName from "./components/RecipeName"
 import Ingredients from "./components/Ingredients"
 import Directions from "./components/Directions"
 import './index.css'
-import { useState } from "react";
-
+import React, { useEffect, useState } from "react";
+import axios from 'axios';
+import { json } from "react-router-dom"
 
 const AddNewRecipe = () => {
-  const [recipeName, setRecipeName] = useState(false)
+  const [recipeName, setRecipeName] = useState('')
   const [ingredients, setIngredients] = useState('')
   const [directions, setDirections] = useState('')
-  const [recipeData, setRecipeData] = useState('')
+  const [recipeData, setRecipeData] = useState({})
+  const apiBaseURL = "http://localhost:3500";
 
-  const handleNameChange = (event) => {
-    setRecipeName(event.target.value);
-  }
+  const handleNameChange = (event) => { setRecipeName(event.target.value); }
   const handleIngredientsChange = (e) => {
     setIngredients(e.target.value)
   }
   const handleDirectionsChange = (e) => {
     setDirections(e.target.value)
   }
+
+
   const handleSubmit = async (event) => {
    event.preventDefault();
-
-   try{
-    const response = await fetch('http://localhost:3000/new');
-    console.log(response);
-   }
-   catch(error){
-    console.log(error);
-   }
+    console.log(recipeName);
     
   };
+
   return(
     <>
    <div className="container-fluid p-0">
@@ -70,4 +66,4 @@ const AddNewRecipe = () => {
 
 }
 
-export default AddNewRecipe
+export default AddNewRecipe;
